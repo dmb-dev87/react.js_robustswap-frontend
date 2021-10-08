@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu, ConnectorId } from '@pantherswap-libs/uikit'
+import { ConnectorId } from '@pantherswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
-// import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import { injected, bsc, walletconnect } from 'connectors'
+import { Menu as UikitMenu } from '../../uikit/widgets/Menu'
 import links from './config'
+
 
 const Menu: React.FC = (props) => {
   const { account, activate, deactivate } = useWeb3React()
