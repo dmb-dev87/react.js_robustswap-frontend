@@ -1,7 +1,6 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@pantherswap-libs/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pantherswap-libs/uikit'
 import { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
@@ -17,7 +16,6 @@ import TradePrice from 'components/swap/TradePrice'
 import TokenWarningModal from 'components/TokenWarningModal'
 import SyrupWarningModal from 'components/SyrupWarningModal'
 import ProgressSteps from 'components/ProgressSteps'
-
 import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
 import { useActiveWeb3React } from 'hooks'
 import { useCurrency } from 'hooks/Tokens'
@@ -34,6 +32,7 @@ import Loader from 'components/Loader'
 import { TranslateString } from 'utils/translateTextHelpers'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '../../uikit'
 import AppBody from '../AppBody'
 
 const { main: Main } = TYPE

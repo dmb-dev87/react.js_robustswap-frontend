@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import { darken } from 'polished'
 import { NavLink, Link as HistoryLink } from 'react-router-dom'
 import { ArrowLeft } from 'react-feather'
 import { RowBetween } from 'components/Row'
 import QuestionHelper from 'components/QuestionHelper'
 import TranslatedText from 'components/TranslatedText'
+import { ButtonMenu, ButtonMenuItem } from '../../uikit'
 
 const Tabs = styled.div`
   display: flex;

@@ -1,8 +1,7 @@
 import React from 'react'
-import { Text } from '@pantherswap-libs/uikit'
 import { ChainId, Currency, currencyEquals, ETHER, Token } from '@pantherswap-libs/sdk'
 import styled from 'styled-components'
-
+import { Text } from '../../uikit'
 import { SUGGESTED_BASES } from '../../constants'
 import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'

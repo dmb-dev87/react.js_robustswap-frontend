@@ -1,8 +1,8 @@
 import React from 'react'
 import { useWeb3React } from '@web3-react/core'
-import { Button, ButtonProps, ConnectorId, useWalletModal } from '@pantherswap-libs/uikit'
-import { injected, walletconnect } from 'connectors'
 import useI18n from 'hooks/useI18n'
+import { injected, walletconnect } from 'connectors'
+import { Button, ButtonProps, ConnectorId, useWalletModal } from '../../uikit'
 
 const UnlockButton: React.FC<ButtonProps> = props => {
   const TranslateString = useI18n()

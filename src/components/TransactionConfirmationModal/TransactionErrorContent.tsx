@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import { Button, Text } from '@pantherswap-libs/uikit'
 import { AlertTriangle } from 'react-feather'
+import { Button, Text } from '../../uikit'
 import { AutoColumn } from '../Column'
 import { Wrapper, Section, BottomSection, ContentHeader } from './helpers'
 

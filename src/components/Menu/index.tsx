@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { ConnectorId } from '@pantherswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
 import { injected, bsc, walletconnect } from 'connectors'
+import { ConnectorId } from '../../uikit'
 import { Menu as UikitMenu } from '../../uikit/widgets/Menu'
 import links from './config'
 

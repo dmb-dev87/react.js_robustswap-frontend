@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Input, Text } from '@pantherswap-libs/uikit'
 import { useUserDeadline } from 'state/user/hooks'
+import { Input, Text } from '../../uikit'
 import QuestionHelper from '../QuestionHelper'
 import TranslatedText from '../TranslatedText'
 

@@ -1,5 +1,5 @@
-import { Text } from '@pantherswap-libs/uikit'
 import styled from 'styled-components'
+import { Text } from '../../uikit'
 
 export const Wrapper = styled.div`
   position: relative;

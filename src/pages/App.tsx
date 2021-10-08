@@ -2,11 +2,11 @@ import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
-import VersionBar from '../components/VersionBar'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
+import Home from './Home'
 import AddLiquidity from './AddLiquidity'
 import Pool from './Pool'
 import PoolFinder from './PoolFinder'
@@ -37,21 +37,12 @@ const BodyWrapper = styled.div`
   overflow-x: hidden;
   z-index: 1;
   justify-content: center;
-  // background-image: url('/images/group-pancake.svg');
-  // background-repeat: no-repeat;
-  // background-position: bottom 24px center;
-  // background-size: 90%;
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;
   }
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    // background-image: url('/images/arch-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.svg'),
-    //   url('/images/left-pancake.svg'), url('/images/right-pancake.svg');
-    // background-repeat: no-repeat;
-    // background-position: center 420px, 10% 230px, 90% 230px;
-    // background-size: contain, 266px, 266px;
     min-height: 90vh;
   }
 `
@@ -127,6 +118,7 @@ export default function App() {
                   <Popups />
                   <Web3ReactManager>
                     <Switch>
+                      <Route exact strict path="/" component={Home} />
                       <Route exact strict path="/swap" component={Swap} />
                       <Route exact strict path="/find" component={PoolFinder} />
                       <Route exact strict path="/pool" component={Pool} />
@@ -144,7 +136,6 @@ export default function App() {
                   <Marginer />
                 </BodyWrapper>
               </Menu>
-              <VersionBar />
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>

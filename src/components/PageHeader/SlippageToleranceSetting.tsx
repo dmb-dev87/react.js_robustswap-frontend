@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Flex, Input, Text } from '@pantherswap-libs/uikit'
 import { useUserSlippageTolerance } from 'state/user/hooks'
+import { Button, Flex, Input, Text } from '../../uikit'
 import QuestionHelper from '../QuestionHelper'
 import TranslatedText from '../TranslatedText'
 

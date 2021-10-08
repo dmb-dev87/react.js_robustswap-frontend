@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
-import { CheckmarkCircleIcon, ErrorIcon, Flex, LinkExternal, Text, Modal, Button } from '@pantherswap-libs/uikit'
 import { useActiveWeb3React } from 'hooks'
 import { getBscScanLink } from 'utils'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'
 import { TransactionDetails } from 'state/transactions/reducer'
 import Loader from 'components/Loader'
+import { CheckmarkCircleIcon, ErrorIcon, Flex, LinkExternal, Text, Modal, Button } from '../../uikit'
 
 type RecentTransactionsModalProps = {
   onDismiss?: () => void

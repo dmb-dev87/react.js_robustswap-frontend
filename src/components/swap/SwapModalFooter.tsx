@@ -1,8 +1,7 @@
 import { Trade, TradeType } from '@pantherswap-libs/sdk'
 import React, { useMemo, useState } from 'react'
-import { Text , Button } from '@pantherswap-libs/uikit'
 import { Repeat } from 'react-feather'
-
+import { Text , Button } from '../../uikit'
 import { Field } from '../../state/swap/actions'
 import {
   computeSlippageAdjustedAmounts,

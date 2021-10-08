@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Text } from '@pantherswap-libs/uikit'
 import { AlertTriangle } from 'react-feather'
+import { Button, Text } from '../../uikit'
 import { TYPE } from '../Shared'
 import Modal from '../Modal'
 import { AutoRow, RowBetween } from '../Row'

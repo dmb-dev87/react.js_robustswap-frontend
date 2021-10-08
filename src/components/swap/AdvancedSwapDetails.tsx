@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trade, TradeType } from '@pantherswap-libs/sdk'
-import { Card, CardBody, Text } from '@pantherswap-libs/uikit'
+import { Card, CardBody, Text } from '../../uikit'
 import { Field } from '../../state/swap/actions'
 import { useUserSlippageTolerance } from '../../state/user/hooks'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown } from '../../utils/prices'

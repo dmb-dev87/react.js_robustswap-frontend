@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { JSBI, Pair, Percent } from '@pantherswap-libs/sdk'
-import { Button, Card as UIKitCard, CardBody, Text } from '@pantherswap-libs/uikit'
 import { darken } from 'polished'
 import { ChevronDown, ChevronUp } from 'react-feather'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Button, Card as UIKitCard, CardBody, Text } from '../../uikit'
 import { useTotalSupply } from '../../data/TotalSupply'
-
 import { useActiveWeb3React } from '../../hooks'
 import { useTokenBalance } from '../../state/wallet/hooks'
 import { currencyId } from '../../utils/currencyId'
