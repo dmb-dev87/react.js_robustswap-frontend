@@ -9,27 +9,27 @@ const config: MenuEntry[] = [
   {
     label: 'Exchange',
     icon: 'ExchangeIcon',
-    href: '/',
+    href: '/exchange',
   },
   {
     label: 'Farm',
     icon: 'FarmIcon',
-    href: '/',
+    href: '/farm',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: '/',
+    href: '/pools',
   },
   {
     label: 'Referrals',
     icon: 'ReferralIcon',
-    href: '/',
+    href: '/referrals',
   },
   {
     label: 'Audit',
     icon: 'AuditIcon',
-    href: '/',
+    href: '/audit',
   },
   {
     label: 'Features',
@@ -37,89 +37,89 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Configurability',
-        href: '/',
+        href: '/Configurability',
       },
       {
         label: 'Transaction Limit',
-        href: '/',
+        href: '/tranlimit',
       },
       {
         label: 'Transaction Tax',
-        href: '/',
+        href: '/trantax',
       },
       {
         label: 'Liquidity Generation',
-        href: '/',
+        href: '/liquidity',
       },
       {
         label: 'Reward Lockup',
-        href: '/',
+        href: '/reward',
       },
       {
         label: 'Maximum Supply',
-        href: '/',
+        href: '/maxsupply',
       },
       {
         label: 'Automatic Burning',
-        href: '/',
+        href: '/autoburn',
       },
       {
         label: 'Buyback and Burn',
-        href: '/',
+        href: '/buyban-burn',
       },
     ],
   },
   {
     label: 'Listings',
     icon: 'ListingIcon',
-    href: '/',
+    href: '/listings',
     items: [
       {
         label: 'BSCScan',
-        href: '/',
+        href: '/bscscan',
       },
       {
         label: 'DappRadar',
-        href: '/',
+        href: '/dappradar',
       },
       {
         label: 'Coingecko',
-        href: '/',
+        href: '/coingecko',
       },
       {
         label: 'CoinMarketCap',
-        href: '/',
+        href: '/coinmarketcap',
       },
       {
         label: 'LiveCoinWatch',
-        href: '/',
+        href: '/livecoingwatch',
       },
       {
         label: 'Vfat',
-        href: '/',
+        href: '/vfat',
       }
     ],
   },
   {
     label: 'Chart',
     icon: 'ChartIcon',
-    href: '/',
+    href: '/chart',
     items: [
       {
         label: 'Poocoin',
-        href: '/',
+        href: '/poocoin',
       },
       {
         label: 'DexTools',
-        href: '/',
+        href: '/dextool',
       },
       {
         label: 'DexGuru',
-        href: '/',
+        href: '/dexguru',
       },
       {
         label: 'Bogged',
-        href: '/',
+        href: '/bogged',
       }
     ],
   },
