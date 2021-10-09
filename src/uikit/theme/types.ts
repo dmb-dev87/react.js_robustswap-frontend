@@ -57,6 +57,7 @@ export type Colors = {
 
   // Brand colors
   binance: string;
+  menuBackground: string;
 };
 
 export type ZIndices = {
