@@ -21,8 +21,8 @@ const { LanguageIcon } = Icons;
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: ${({ theme }) => theme.nav.background};
-  border-top: solid 2px rgba(133, 133, 133, 0.1);
+  background-color: transparent;
+  align-self: center;
 `;
 
 const PriceLink = styled.a`
@@ -41,6 +41,7 @@ const PriceLink = styled.a`
 const SettingsEntry = styled.div`
   display: flex;
   align-items: center;
+  align-self: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
@@ -77,7 +78,7 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <SocialEntry>
+      {/* <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href={cakePriceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
@@ -106,28 +107,28 @@ const PanelFooter: React.FC<Props> = ({
             </MenuButton>
           ))}
         </Dropdown>
-      </SocialEntry>
+      </SocialEntry> */}
       <SettingsEntry>
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "20px" : 0;
-            if (social.items) {
-              return (
-                <Dropdown
-                  key={social.label}
-                  position="top"
-                  target={<Icon {...iconProps} mr={mr} style={{ display: "flex", alignItems: "center" }} />}
-                >
-                  {social.items.map((item) => (
-                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-                      {item.label}
-                    </Link>
-                  ))}
-                </Dropdown>
-              );
-            }
+            // if (social.items) {
+            //   return (
+            //     <Dropdown
+            //       key={social.label}
+            //       position="top"
+            //       target={<Icon {...iconProps} mr={mr} style={{ display: "flex", alignItems: "center" }} />}
+            //     >
+            //       {social.items.map((item) => (
+            //         <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+            //           {item.label}
+            //         </Link>
+            //       ))}
+            //     </Dropdown>
+            //   );
+            // }
             return (
               <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
                 <Icon {...iconProps} />

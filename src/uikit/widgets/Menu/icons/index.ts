@@ -6,6 +6,7 @@ export { default as HomeIcon } from "./Home";
 export { default as ExchangeIcon } from "./Exchange";
 export { default as IfoIcon } from "./Ifo";
 export { default as InfoIcon } from "./Info";
+export { default as RedditIcon } from "./Reddit";
 export { default as LanguageIcon } from "./Language";
 export { default as LogoIcon } from "./Logo";
 export { default as MoonIcon } from "./Moon";
