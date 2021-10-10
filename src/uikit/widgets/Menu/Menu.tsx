@@ -24,7 +24,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 8px;
+  padding-left: 232px;
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
@@ -34,8 +34,10 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
 `;
 
 const BodyWrapper = styled.div`
+  overflow: visible;
   position: relative;
   display: flex;
+  z-index: 30;
 `;
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
@@ -120,7 +122,6 @@ const Menu: React.FC<NavProps> = ({
       <StyledNav showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />

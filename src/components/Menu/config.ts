@@ -9,7 +9,7 @@ const config: MenuEntry[] = [
   {
     label: 'Exchange',
     icon: 'ExchangeIcon',
-    href: '/exchange',
+    href: '/swap',
   },
   {
     label: 'Farm',
