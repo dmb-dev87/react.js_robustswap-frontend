@@ -53,6 +53,10 @@ export default function Home() {
 
   return (
     <>
+      <div style={{position: 'relative', top: '-64px'}}>
+        <img src="/images/home.png" alt=""/>
+      </div>
+      
     </>
   )
 }
