@@ -14,6 +14,9 @@ import TranslatedText from 'components/TranslatedText'
 import { TranslateString } from 'utils/translateTextHelpers'
 import PageHeader from 'components/PageHeader'
 import { Button, CardBody, Text } from '../../uikit'
+import { FarmsStaking } from './FarmsStaking'
+import { BuyToken } from './BuyToken'
+import { FollowTwitter } from './FollowTwitter'
 import AppBody from '../AppBody'
 
 const { body: Body } = TYPE
@@ -53,6 +56,11 @@ export default function Home() {
 
   return (
     <>
+      <FarmsStaking 
+        harvestRbs={0}
+        walletRbs={0} />
+      <BuyToken />
+      <FollowTwitter />
     </>
   )
 }
