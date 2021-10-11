@@ -3,9 +3,6 @@ import styled from 'styled-components'
 import Card from 'components/Card'
 import { Button, Text } from 'uikit'
 import { LogoCircleIcon } from 'uikit/components/Svg'
-import { TYPE } from '../../components/Shared'
-
-const { black: Black } = TYPE
 
 const Logo = styled.div`
   position: absolute;

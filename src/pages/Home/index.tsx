@@ -16,11 +16,8 @@ import SupplyCard from './components/SupplyCard'
 import TransactionCard from './components/TransactionCard'
 import WelcomeHeader from './components/WelcomeHeader'
 
-
-
 export default function Home() {
   const theme = useContext(ThemeContext)
-
   return (
       <>
         <WelcomeHeader />

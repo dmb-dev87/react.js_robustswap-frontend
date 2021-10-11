@@ -2,14 +2,10 @@ import React from "react";
 import Svg from "../../../components/Svg/Svg";
 import { SvgProps } from "../../../components/Svg/types";
 
-interface LogoProps extends SvgProps {
-  isDark: boolean;
-}
-
-const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
+const Logo: React.FC<SvgProps> = (props) => {
   // const textColor = isDark ? "#FFFFFF" : "#000000";
   return (
-    <Svg width="181" height="56" viewBox="0 0 181 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <Svg width="181" height="56" viewBox="0 0 181 56" fill="none" {...props}>
       <g clipPath="url(#clip0)">
         <path fillRule="evenodd" clipRule="evenodd" d="M42.8284 51.1608C50.728 46.2417 55.9864 37.6152 55.9864 27.777C55.9864 12.4624 43.2646 0.0556641 27.5623 0.0556641C19.4931 0.0556641 12.1993 3.32698 7.03785 8.58531H29.7432C39.3875 8.58531 47.2386 16.2426 47.2386 25.6446C47.2386 33.423 41.8591 40.0141 34.5169 42.0496L42.8284 51.1608ZM16.0521 34.3196H29.7916C34.4926 34.3196 38.297 30.4183 38.3455 25.6446C38.3455 20.8467 34.5168 16.9453 29.8158 16.9453H2.11874C0.737517 20.2893 -0.0136719 23.9484 -0.0136719 27.8012C-0.0136719 43.4066 12.3688 56.0557 27.6592 56.0557C29.937 56.0557 32.1663 55.7649 34.2745 55.2318L16.0521 34.3196Z" fill="#6C60F7"/>
       </g>
