@@ -48,8 +48,10 @@ export type Colors = {
   backgroundDisabled: string;
   text: string;
   textDisabled: string;
+  textDetail: string,
   textSubtle: string;
   borderColor: string;
+  deviderColor: string;
   card: string;
 
   // Gradients
