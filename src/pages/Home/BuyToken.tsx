@@ -25,7 +25,7 @@ const RoundButton = styled(Button)`
 export function BuyToken() {
   return (
     <GradientCard padding="24px">
-      <Text color="#FCFCFC" fontSize="20px" lineHeight="24px" bold>
+      <Text style={{ textAlign: "center" }} color="#FCFCFC" fontSize="20px" lineHeight="24px" bold>
         Join the revloution with the Robust Protocol community
       </Text>      
       <RoundButton marginTop="32px" marginBottom="16px">

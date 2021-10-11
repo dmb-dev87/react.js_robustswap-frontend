@@ -22,6 +22,17 @@ const StyledDiv = styled.div`
   width: 50%;
 `
 
+const Title = styled(Text)`
+  font-family: Poppins;
+  background: linear-gradient(180deg, #89FFE3 0%, #BEFF74 53.12%, #FFF174 96.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+`
+
 const GradientCard = styled(Card)`
   position:relative;
   background: linear-gradient(90.04deg, #0C0720 0.04%, #291A83 99.97%);
@@ -49,7 +60,7 @@ export function FarmsStaking({
 }) {
   return (
     <GradientCard>
-      <Text color="#24c7d6" fontSize="34px" lineHeight="40px" bold>Farms & Staking</Text>
+      <Title>Farms & Staking</Title>
       <RbsDiv>
         <StyledDiv>
           <Text color="#E354FA" fontSize="12px" lineHeight="14px">RBS to Harvest</Text>        
