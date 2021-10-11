@@ -48,8 +48,11 @@ export type Colors = {
   backgroundDisabled: string;
   text: string;
   textDisabled: string;
+  textDetail: string,
   textSubtle: string;
   borderColor: string;
+  deviderColor: string;
+  valueDividerColor: string,
   card: string;
 
   // Gradients
@@ -57,6 +60,7 @@ export type Colors = {
 
   // Brand colors
   binance: string;
+  menuBackground: string;
 };
 
 export type ZIndices = {

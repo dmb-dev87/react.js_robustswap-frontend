@@ -7,155 +7,150 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Trade',
-    icon: 'TradeIcon',
-    initialOpenState: true,
-    items: [
-      {
-        label: 'Exchange',
-        href: '/swap',
-      },
-      {
-        label: 'Liquidity',
-        href: '/pool',
-      },
-    ],
+    label: 'Exchange',
+    icon: 'ExchangeIcon',
+    href: '/swap',
   },
   {
-    label: 'Farms',
+    label: 'Farm',
     icon: 'FarmIcon',
-    href: 'https://pantherswap.com/farms',
+    href: '/farm',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://pantherswap.com/pools',
-  },
-  {
-    label: 'Jungles',
-    icon: 'JungleIcon',
-    href: 'https://pantherswap.com/jungles',
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pantherswap.com/lottery',
-  },
-  {
-    label: 'IPO',
-    icon: 'IfoIcon',
-    href: 'https://pantherswap.com/ipo',
+    href: '/pools',
   },
   {
     label: 'Referrals',
     icon: 'ReferralIcon',
-    href: 'https://pantherswap.com/referrals',
+    href: '/referrals',
   },
   {
-    label: 'Audits',
-    icon: 'ShieldIcon',
-    href: 'https://docs.pantherswap.com/security/audits',
+    label: 'Audit',
+    icon: 'AuditIcon',
+    href: '/audit',
   },
   {
     label: 'Features',
     icon: 'FeatureIcon',
     items: [
       {
-        label: 'Automatic LP',
-        href: 'https://docs.pantherswap.com/tokenomics/automatic-liquidity',
+        label: 'Configurability',
+        href: '/Configurability',
+      },
+      {
+        label: 'Transaction Limit',
+        href: '/tranlimit',
+      },
+      {
+        label: 'Transaction Tax',
+        href: '/trantax',
+      },
+      {
+        label: 'Liquidity Generation',
+        href: '/liquidity',
+      },
+      {
+        label: 'Reward Lockup',
+        href: '/reward',
+      },
+      {
+        label: 'Maximum Supply',
+        href: '/maxsupply',
       },
       {
         label: 'Automatic Burning',
-        href: 'https://docs.pantherswap.com/tokenomics/automatic-burning',
+        href: '/autoburn',
       },
       {
-        label: 'Harvest Lockup',
-        href: 'https://docs.pantherswap.com/tokenomics/harvest-lockup',
-      },
-      {
-        label: 'Anti-Whale',
-        href: 'https://docs.pantherswap.com/tokenomics/anti-whale',
+        label: 'Buyback and Burn',
+        href: '/buyban-burn',
       },
     ],
   },
   {
     label: 'Listings',
     icon: 'ListingIcon',
+    href: '/listings',
     items: [
       {
-        label: 'BscScan',
-        href: 'https://bscscan.com/token/0x1f546ad641b56b86fd9dceac473d1c7a357276b7',
+        label: 'BSCScan',
+        href: '/bscscan',
       },
       {
         label: 'DappRadar',
-        href: 'https://dappradar.com/binance-smart-chain/defi/pantherswap',
+        href: '/dappradar',
       },
       {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/pantherswap',
+        label: 'Coingecko',
+        href: '/coingecko',
       },
       {
         label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/pantherswap/',
+        href: '/coinmarketcap',
       },
       {
         label: 'LiveCoinWatch',
-        href: 'https://www.livecoinwatch.com/price/PantherSwap-PANTHER',
+        href: '/livecoingwatch',
       },
       {
         label: 'Vfat',
-        href: 'https://vfat.tools/bsc/panther',
-      },
+        href: '/vfat',
+      }
     ],
   },
   {
-    label: 'Analytics',
-    icon: 'InfoIcon',
+    label: 'Chart',
+    icon: 'ChartIcon',
+    href: '/chart',
     items: [
       {
-        label: 'Overview',
-        href: 'https://pantherswap.info',
+        label: 'Poocoin',
+        href: '/poocoin',
       },
       {
-        label: 'Tokens',
-        href: 'https://pantherswap.info/tokens',
+        label: 'DexTools',
+        href: '/dextool',
       },
       {
-        label: 'Pairs',
-        href: 'https://pantherswap.info/pairs',
+        label: 'DexGuru',
+        href: '/dexguru',
       },
       {
-        label: 'Accounts',
-        href: 'https://pantherswap.info/accounts',
-      },
+        label: 'Bogged',
+        href: '/bogged',
+      }
     ],
   },
   {
     label: 'More',
     icon: 'MoreIcon',
+    href: '/',
     items: [
       {
-        label: 'Github',
-        href: 'https://github.com/pantherswap',
+        label: 'GitHub',
+        href: '/',
       },
       {
-        label: 'Docs',
-        href: 'https://docs.pantherswap.com',
+        label: 'GitBook',
+        href: '/',
       },
       {
         label: 'Roadmap',
-        href: 'https://docs.pantherswap.com/roadmap',
-      },
-      {
-        label: 'Blog',
-        href: 'https://pantherswap.medium.com',
+        href: '/',
       },
       {
         label: 'Voting',
-        href: 'https://voting.pantherswap.com/',
+        href: '/',
       },
+      {
+        label: 'Videos',
+        href: '/',
+      }
     ],
   },
+
 ]
 
 export default config

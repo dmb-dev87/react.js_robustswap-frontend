@@ -26,7 +26,7 @@ export function FollowTwitter() {
       <Text color="#FCFCFC" fontSize="16px" lineHeight="24px" bold>
         @robustprotocol
       </Text>
-      <TwitterImage src="/images/twitter.png" />
+      <TwitterImage src="./images/twitter.png" />
     </FollowDiv>
   )
 }
