@@ -60,4 +60,4 @@ const Price: React.FC<AvatarProps> = ({ profile }) => {
   );
 };
 
-export default Avatar;
+export default Price;
