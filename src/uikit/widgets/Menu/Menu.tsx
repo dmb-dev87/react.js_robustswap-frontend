@@ -51,6 +51,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   }
 
   background-color: ${({ theme }) => theme.colors.background};
+  overflow: auto;
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
@@ -117,7 +118,7 @@ const Menu: React.FC<NavProps> = ({
 
   return (
     <Wrapper>
-      <StyledNav isPushed={isPushed} showMenu={showMenu}>
+      {/* <StyledNav isPushed={isPushed} showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
           isDark={isDark}
@@ -127,7 +128,7 @@ const Menu: React.FC<NavProps> = ({
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
-      </StyledNav>
+      </StyledNav> */}
       <BodyWrapper>
         <Panel
           isPushed={isPushed}

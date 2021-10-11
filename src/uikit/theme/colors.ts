@@ -30,6 +30,7 @@ export const lightColors: Colors = {
   textDetail: "#7381FC",
   borderColor: "#E9EAEB",
   deviderColor: "#151745",
+  valueDividerColor: "#FCFCFC",
   card: "#FFFFFF",
   menuBackground:"linear-gradient(180deg, #0C0720 0%, #291A83 100%)",
   gradients: {
@@ -56,6 +57,7 @@ export const darkColors: Colors = {
   textDetail: "#7381FC",
   borderColor: "#0C0720",
   deviderColor: "#151745",
+  valueDividerColor: "#FCFCFC",
   card: "#1E215C",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #1f606f 0%, #164865 100%)",

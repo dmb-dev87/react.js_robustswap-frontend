@@ -19,6 +19,10 @@ const style = {
     fontSize: "48px",
     fontSizeLg: "64px",
   },
+  [sizes.XXXL]: {
+    fontSize: "72px",
+    fontSizeLg: "64px",
+  },
 };
 
 const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`

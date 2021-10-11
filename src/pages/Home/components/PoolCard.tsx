@@ -3,8 +3,8 @@ import styled, { ThemeContext } from 'styled-components'
 import { AutoColumn, ColumnCenter } from "components/Column"
 import { AutoRow, RowBetween, RowFixed } from 'components/Row'
 import GridLayout from 'uikit/components/Layouts/CardsLayout'
-import RBSBNBIcon from './icons/RBSBNBIcon'
-import RBTBNBIcon from './icons/RBTBNBIcon'
+import RBSLogoIcon from './icons/RBTLogoIcon'
+import RBTLogoIcon from './icons/RBSLogoIcon'
 import AppBody from '../../AppBody'
 import { CardBody, Heading, IconButton, Text, Card} from '../../../uikit'
 
@@ -25,7 +25,7 @@ export default function FarmCard(props) {
         <AutoColumn gap="20px">
           <RowBetween>
             <RowFixed>
-              <RBSBNBIcon />
+              <RBSLogoIcon />
               <Text>RBS/BNB</Text>
             </RowFixed>
             <RowFixed>
@@ -34,7 +34,7 @@ export default function FarmCard(props) {
           </RowBetween>
           <RowBetween>
             <RowFixed>
-              <RBTBNBIcon />
+              <RBTLogoIcon />
               <Text>RBS/BNB</Text>
             </RowFixed>
             <RowFixed>

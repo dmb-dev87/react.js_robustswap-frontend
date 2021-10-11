@@ -6,7 +6,7 @@ import GridLayout from 'uikit/components/Layouts/CardsLayout'
 import RBSBNBIcon from './icons/RBSBNBIcon'
 import RBTBNBIcon from './icons/RBTBNBIcon'
 import AppBody from '../../AppBody'
-import { CardBody, Heading, IconButton, Text, } from '../../../uikit'
+import { CardBody, Heading, IconButton, Text, Card} from '../../../uikit'
 
 const StyledBoderLeft = styled.div`
   margin-top: -24px;
@@ -25,7 +25,7 @@ const StyledBoderBottom = styled.div`
 `
 
 const StyledColumnCell = styled.div`
-  width: 200px;
+  width: 290px;
   display: flex;
   justify-content: space-between;
 `
@@ -42,7 +42,7 @@ export default function SupplyCard(props) {
   const theme = useContext(ThemeContext)
 
   return (
-    <AppBody>
+    <Card>
       <CardBody>
         <StyledRow>
           <StyledColumnCell>
@@ -68,6 +68,6 @@ export default function SupplyCard(props) {
             </StyledColumnCell>
         </StyledRow>
       </CardBody>
-    </AppBody>
+    </Card>
   )
 }
