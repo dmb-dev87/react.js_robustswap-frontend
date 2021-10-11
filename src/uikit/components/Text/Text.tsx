@@ -15,11 +15,15 @@ const getFontSize = ({ fontSize, small }: TextProps) => {
   return small ? "14px" : fontSize || "16px";
 };
 
+const getLineHeight = ({ lineHeight }: TextProps) => {
+  return lineHeight || "1.5";
+}
+
 const Text = styled.div<TextProps>`
   color: ${getColor};
   font-size: ${getFontSize};
   font-weight: ${({ bold }) => (bold ? 600 : 400)};
-  line-height: 1.5;
+  line-height: ${getLineHeight};
   ${({ textTransform }) => textTransform && `text-transform: ${textTransform};`}
   ${space}
 `;

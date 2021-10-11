@@ -3,6 +3,9 @@ import styled, { ThemeContext } from 'styled-components'
 import GridLayout from 'uikit/components/Layouts/CardsLayout'
 import { AutoColumn, ColumnCenter } from 'components/Column'
 import { AutoRow, RowFixed } from 'components/Row'
+import { FarmsStaking } from './FarmsStaking'
+import { BuyToken } from './BuyToken'
+import { FollowTwitter } from './FollowTwitter'
 import AppBody from '../AppBody'
 import { CardBody, Heading, IconButton, Text, Flex, useModal } from '../../uikit'
 import VolumnCard from './components/VolumnCard'
@@ -20,65 +23,75 @@ export default function Home() {
   const theme = useContext(ThemeContext)
 
   return (
-    <>
-      <HomeLogoImage>
-        <img src="/images/home.png" alt=""/>
-      </HomeLogoImage>
-      <AutoColumn gap="30px">
-        <AutoColumn gap="20px">
-          <AutoRow>
-            <GroupTitle title="RBS Overview" />
-          </AutoRow>
+      <>
+        <HomeLogoImage>
+          <img src="/images/home.png" alt=""/>
+        </HomeLogoImage>
+        <AutoRow>
+        <AutoColumn gap="30px">
+          <AutoColumn gap="20px">
+            <AutoRow>
+              <GroupTitle title="RBS Overview" />
+            </AutoRow>
+            <AutoRow>
+              <GridLayout>
+                <VolumnCard title="Total Liquidity" value="$ 60,000,000"/>
+                <VolumnCard title="24H Volumn" value="$ 23,000,000"/>
+                <VolumnCard title="TVL" value="$ 140,000,000"/>
+              </GridLayout>
+            </AutoRow>
+            <AutoRow >
+              <AutoColumn>
+                <RBSCard title="Total Liquidity" value="$92.24"/>
+              </AutoColumn>
+            </AutoRow>
+          </AutoColumn>
           <AutoRow>
             <GridLayout>
-              <VolumnCard title="Total Liquidity" value="$ 60,000,000"/>
-              <VolumnCard title="24H Volumn" value="$ 23,000,000"/>
-              <VolumnCard title="TVL" value="$ 140,000,000"/>
+              <AutoColumn gap="20px">
+                <AutoRow>
+                  <GroupTitle title="Top Farms" />
+                </AutoRow>
+                <AutoRow>
+                  <FarmCard />
+                </AutoRow>
+              </AutoColumn>
+              <AutoColumn gap="20px">
+                <AutoRow>
+                  <GroupTitle title="Top Pools" />
+                </AutoRow>
+                <AutoRow>
+                  <FarmCard />
+                </AutoRow>
+              </AutoColumn>
             </GridLayout>
           </AutoRow>
-          <AutoRow >
-            <AutoColumn>
-              <RBSCard title="Total Liquidity" value="$92.24"/>
-            </AutoColumn>
-          </AutoRow>
+          <AutoColumn gap="20px">
+            <AutoRow>
+              <GroupTitle title="RBS Supply Stats" />
+            </AutoRow>
+            <AutoRow>
+              <SupplyCard />
+            </AutoRow>
+          </AutoColumn>
+          <AutoColumn gap="20px">
+            <AutoRow>
+              <GroupTitle title="RBS Transaction Limits" />
+            </AutoRow>
+            <AutoRow>
+              <TransactionCard />
+            </AutoRow>
+          </AutoColumn>
         </AutoColumn>
-        <AutoRow>
-          <GridLayout>
-            <AutoColumn gap="20px">
-              <AutoRow>
-                <GroupTitle title="Top Farms" />
-              </AutoRow>
-              <AutoRow>
-                <FarmCard />
-              </AutoRow>
-            </AutoColumn>
-            <AutoColumn gap="20px">
-              <AutoRow>
-                <GroupTitle title="Top Pools" />
-              </AutoRow>
-              <AutoRow>
-                <FarmCard />
-              </AutoRow>
-            </AutoColumn>
-          </GridLayout>
-        </AutoRow>
-        <AutoColumn gap="20px">
-          <AutoRow>
-            <GroupTitle title="RBS Supply Stats" />
-          </AutoRow>
-          <AutoRow>
-            <SupplyCard />
-          </AutoRow>
+        <AutoColumn>
+          <FarmsStaking 
+            harvestRbs={0}
+            walletRbs={0} />
+          <BuyToken />
+          <FollowTwitter />
         </AutoColumn>
-        <AutoColumn gap="20px">
-          <AutoRow>
-            <GroupTitle title="RBS Transaction Limits" />
-          </AutoRow>
-          <AutoRow>
-            <TransactionCard />
-          </AutoRow>
-        </AutoColumn>
-    </AutoColumn>
-  </>
+      </AutoRow>
+    </>
+
   )
 }
