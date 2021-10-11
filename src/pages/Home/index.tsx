@@ -12,9 +12,8 @@ import FarmCard from './components/FarmCard'
 import SupplyCard from './components/SupplyCard'
 import TransactionCard from './components/TransactionCard'
 
-const HomeLogoImage styled.div`
+const HomeLogoImage = styled.div`
 	position: relative;
-	top: -64px;
 `
 
 export default function Home() {
@@ -22,9 +21,9 @@ export default function Home() {
 
   return (
     <>
-	  <HomeLogoImage>
-	  	<img src="/images/home.png" alt=""/>
-	  </HomeLogoImage>
+      <HomeLogoImage>
+        <img src="/images/home.png" alt=""/>
+      </HomeLogoImage>
       <AutoColumn gap="30px">
         <AutoColumn gap="20px">
           <AutoRow>
