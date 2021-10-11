@@ -42,7 +42,7 @@ export default function FarmCard(props) {
 
   return (
     <HomeLogoImage>
-      <img src="/images/home.png" alt=""/>
+      <img src="./images/home.png" alt=""/>
       <HeadingTopBar>
         <RbsRbtCompare>
           <AutoRow>
