@@ -9,7 +9,6 @@ import MenuButton from "./MenuButton";
 interface Props {
   isPushed: boolean;
   isDark: boolean;
-  togglePush: () => void;
   href: string;
 }
 
@@ -17,10 +16,8 @@ const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 32px;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: none;
-    }
+    width: 56px;
+    height: 56px;
   }
   .desktop-icon {
     width: 174px;
@@ -31,24 +28,20 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
+      {isPushed ? (
+        <LogoWithText className="desktop-icon" isDark={isDark}/>
+      ) : (
+        <LogoIcon className="mobile-icon"/>
+      )}
     </>
   );
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="14px">
-        {isPushed ? (
-          <HamburgerCloseIcon width="24px" color="textSubtle" />
-        ) : (
-          <HamburgerIcon width="24px" color="textSubtle" />
-        )}
-      </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Panther home page">
           {innerLogo}

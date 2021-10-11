@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://dex.pantherswap.com",
+        href: "https://dex.RobustSwap.com",
       },
       {
         label: "Liquidity",
-        href: "https://dex.pantherswap.com/#/pool",
+        href: "https://dex.RobustSwap.com/#/pool",
       },
     ],
   },
@@ -59,19 +59,19 @@ export const links = [
     items: [
       {
         label: "Overview",
-        href: "https://pantherswap.info",
+        href: "https://RobustSwap.info",
       },
       {
         label: "Tokens",
-        href: "https://pantherswap.info/tokens",
+        href: "https://RobustSwap.info/tokens",
       },
       {
         label: "Pairs",
-        href: "https://pantherswap.info/pairs",
+        href: "https://RobustSwap.info/pairs",
       },
       {
         label: "Accounts",
-        href: "https://pantherswap.info/accounts",
+        href: "https://RobustSwap.info/accounts",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.pantherswap.com",
+        href: "https://voting.RobustSwap.com",
       },
       {
         label: "Github",
@@ -103,11 +103,11 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.pantherswap.com",
+        href: "https://docs.RobustSwap.com",
       },
       {
         label: "Blog",
-        href: "https://pantherswap.medium.com",
+        href: "https://RobustSwap.medium.com",
       },
     ],
   },
@@ -115,42 +115,27 @@ export const links = [
 
 export const socials = [
   {
-    label: "Github",
-    icon: "GithubIcon",
-    href: "https://github.com/pantherswap",
-  },
-  {
-    label: "Docs",
-    icon: "GitbookIcon",
-    href: "https://docs.pantherswap.com",
-  },
-  {
-    label: "Medium",
-    icon: "MediumIcon",
-    href: "https://pantherswap.medium.com",
+    label: "Telegram",
+    icon: "TelegramIcon",
+    href: "https://twitter.com/RobustSwap",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/PantherSwap",
   },
   {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    items: [
-      {
-        label: "English",
-        href: "https://t.me/PantherSwap",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/PantherSwapAnn",
-      },
-    ],
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://RobustSwap.medium.com",
+  },
+  {
+    label: "Reddit",
+    icon: "RedditIcon",
+    href: "https://twitter.com/RobustSwap",
   },
 ];
 
-export const MENU_HEIGHT = 64;
+export const MENU_HEIGHT = 0;
 export const MENU_ENTRY_HEIGHT = 48;
 export const SIDEBAR_WIDTH_FULL = 288;
-export const SIDEBAR_WIDTH_REDUCED = 56;
+export const SIDEBAR_WIDTH_REDUCED = 96;

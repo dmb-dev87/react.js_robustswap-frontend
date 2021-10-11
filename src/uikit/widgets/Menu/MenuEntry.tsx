@@ -4,6 +4,7 @@ import { MENU_ENTRY_HEIGHT } from "./config";
 export interface Props {
   secondary?: boolean;
   isActive?: boolean;
+  isPushed?: boolean;
   theme: DefaultTheme;
 }
 
@@ -22,6 +23,9 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   transition: color 0.4s;
   flex-grow: 1;
   color: ${({ theme }) => theme.colors.text};
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 18px;
 `;
 
 const MenuEntry = styled.div<Props>`
@@ -29,26 +33,22 @@ const MenuEntry = styled.div<Props>`
   display: flex;
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
+  padding: ${({isPushed, secondary }) => (isPushed ? secondary ? "0 48px" : "0 40px" : "0 26px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
-
+  box-shadow: ${({ isActive, theme }) => (isActive ? `none` : "none")};
   a {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
     color: ${({ theme }) => theme.colors.text};
+    background: ${({ isActive, secondary, isPushed}) => (isActive? !secondary ? isPushed? `linear-gradient(90.04deg, rgba(12, 7, 32, 0.8) 0.04%, rgba(41, 26, 131, 0.8) 99.97%)` 
+      : "linear-gradient(90.04deg, rgba(12, 7, 32, 0.8) 0.04%, rgba(41, 26, 131, 0.8) 99.97%)" : "" : "")};
+    border-radius: ${({isPushed}) => isPushed? '8px':'33px'};
   }
-
-  svg {
-    fill: ${({ theme }) => theme.colors.textSubtle};
-  }
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+  a:hover{
+    background: linear-gradient(90.04deg, rgba(12, 7, 32, 0.8) 0.04%, rgba(41, 26, 131, 0.8) 99.97%) ;
   }
 
   // Safari fix
@@ -70,6 +70,7 @@ const MenuEntry = styled.div<Props>`
 MenuEntry.defaultProps = {
   secondary: false,
   isActive: false,
+  isPushed: false,
   role: "button",
 };
 

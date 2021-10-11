@@ -22,12 +22,12 @@ const VersionBar = () => {
   return (
     <Wrapper>
       <Text bold mr="16px">
-        You are using PantherSwap AMM exchange.
+        You are using RobustSwap AMM exchange.
       </Text>
       <Button
         variant="subtle"
         as={Link}
-        href="https://docs.pantherswap.com/amm-launch"
+        href="https://docs.robustswap.com/amm-launch"
         endIcon={<HelpIcon color="white" />}
         size="sm"
         ml="16px"

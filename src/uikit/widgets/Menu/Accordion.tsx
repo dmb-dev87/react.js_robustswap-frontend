@@ -23,9 +23,8 @@ const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHei
   max-height: ${({ isOpen, maxHeight }) => (isOpen ? `${maxHeight}px` : 0)};
   transition: max-height 0.3s ease-out;
   overflow: hidden;
-  border-color: ${({ isOpen, isPushed }) => (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent")};
-  border-style: solid;
-  border-width: 1px;
+  background-color: #151745;
+
 `;
 
 const Accordion: React.FC<Props> = ({
@@ -50,10 +49,12 @@ const Accordion: React.FC<Props> = ({
 
   return (
     <Container>
-      <MenuEntry onClick={handleClick} className={className}>
+      <MenuEntry isPushed={isPushed} onClick={handleClick} className={className}>
         {icon}
-        <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
-        {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+        {isPushed && 
+          <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
+        }
+        {isPushed ? isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />: <></>}
       </MenuEntry>
       <AccordionContent
         isOpen={isOpen}

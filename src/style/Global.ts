@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Mitr', sans-serif;
+    font-family: Poppins;
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
