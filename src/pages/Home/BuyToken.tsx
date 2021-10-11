@@ -2,9 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from 'components/Card'
 import { Button, Text } from '../../uikit'
-import { TYPE } from '../../components/Shared'
-
-const { black: Black } = TYPE
 
 const GradientCard = styled(Card)`
   background: linear-gradient(90.04deg, #0C0720 0.04%, #291A83 99.97%);

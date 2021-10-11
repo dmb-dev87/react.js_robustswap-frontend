@@ -1,10 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from 'components/Card'
-import { Button, Text } from '../../uikit'
-import { TYPE } from '../../components/Shared'
-
-const { black: Black } = TYPE
+import { Text } from '../../uikit'
 
 const FollowDiv = styled(Card)`
   background: #1E215C;
