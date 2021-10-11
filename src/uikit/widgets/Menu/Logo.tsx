@@ -33,7 +33,7 @@ const Logo: React.FC<Props> = ({ isPushed, isDark, href }) => {
   const innerLogo = (
     <>
       {isPushed ? (
-        <LogoWithText className="desktop-icon" isDark={isDark}/>
+        <LogoWithText className="desktop-icon" />
       ) : (
         <LogoIcon className="mobile-icon"/>
       )}
